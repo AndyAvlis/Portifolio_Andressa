@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+footer{
+    padding: 25px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .Andressa{
+    background-color: #0C0D0C;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+footer .Andressa h1{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+footer nav{
+    display: flex;
+}
+
+footer nav ul h1{
+    font-family: 'Cinzel', serif;
+}
+
+footer nav ul{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+footer nav ul li{
+    list-style: none;
+}
+
+footer nav ul li a{
+    color: #0C0D0C;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+footer nav ul li a:hover{
+    color: #A60321;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
