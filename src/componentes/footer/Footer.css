@@ -27,6 +27,7 @@ footer .Andressa h1{
 
 footer nav{
     display: flex;
+    flex-direction: row-reverse;
 }
 
 footer nav ul h1{
@@ -34,6 +35,7 @@ footer nav ul h1{
 }
 
 footer nav ul{
+    padding-top: 7vh;
     font-weight: normal;
     font-size: 20px;
 }
@@ -43,6 +45,7 @@ footer nav ul li{
 }
 
 footer nav ul li a{
+    font-size: 20px;
     color: #0C0D0C;
     text-decoration: none;
     transition: 0.5s;
