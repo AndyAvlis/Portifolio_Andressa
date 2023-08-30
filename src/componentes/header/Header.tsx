@@ -18,7 +18,7 @@ function Header(){
                         <a href="#">Sobre Mim</a>
                     </li>
                     <div className="logo">
-                        <img src={Logo} alt="" />
+                        <img src={Logo}/>
                     </div>
                     <li>
                         <a href="#">Desings</a>

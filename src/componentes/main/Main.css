@@ -7,6 +7,7 @@ main .bio{
     padding: 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-left: 5%;
 }
 
@@ -27,7 +28,9 @@ main .bio .texto{
     padding: 30px;
     display: flex;
     align-items: center;
-    flex-direction: column;text-align: justify;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 17px;
 }
 
 main .bio .texto p{
@@ -35,8 +38,89 @@ main .bio .texto p{
 }
 
 main .trabalho{
+    display: flex;
+    align-items: center;
     padding: 30px;
     background-color: #fff;
     border-bottom: 1px solid #0C0D0C;
 }
 
+main .trabalho .textoD{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .trabalho .textoD p{
+    padding: 20px;
+    width: 45%;
+    height: auto;
+    text-align: justify;
+    font-size: 23px;
+}
+
+main .trabalho .desing{
+    display: flex;
+}
+
+main .trabalho .desing .imgCortada img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    padding: 20px;
+}
+
+main .trabalho .textoD a{
+    text-decoration: none;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #000;
+    z-index: 1;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;   
+}
+
+main .trabalho .textoD a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #000;
+    z-index: -1;
+    transition: all 250ms
+}
+
+main .trabalho .textoD a:hover{
+    color: #e8e8e8;
+}
+
+main .trabalho .textoD a:hover::before {
+    width: 100%;
+}
+
+.resto{
+    color: #fff;
+    font-size: 30px;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.resto h1{
+    transition: 1s;
+}
+
+.resto h1:hover{
+    transition: 1s;
+    color: #A60321;
+}

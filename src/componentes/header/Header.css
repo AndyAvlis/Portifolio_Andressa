@@ -59,7 +59,7 @@ header nav ul li a::before {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 4px;
   width: 0;
   background-color: #BF0426;
   transition: .5s ease;

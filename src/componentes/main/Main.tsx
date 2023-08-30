@@ -1,5 +1,6 @@
 import "./Main.css"
-
+import Rain from "../../assets/Rain.png"
+import Room from "../../assets/room.png"
 
 function Main() {
     return(
@@ -16,12 +17,19 @@ function Main() {
                 <div className="textoD">
                     <h1>Meus Trabalhos</h1>
                     <p>Eu adoro trabalhar com design! É uma das minhas paixões. Desde que comecei a me interessar por design, tenho feito vários projetos e cada um deles tem sido muito gratificante para mim. </p>
-                    <p>Comecei fazendo alguns designs simples para amigos e familiares, mas logo passei a desenvolver projetos mais complexos que exigiam maior habilidade técnica de programação. Estou sempre procurando novas maneiras de melhorar os meus designs e torná-los únicos. Tenho usado cores vibrantes em combinação com fontes modernas para criar layouts elegantes e atraentes. Além disso, estou experimentando novamente as animações em HTML5/CSS3, o que é extremamente divertido! 
-                    Também tentei abordagens inovadoras quando se trata da interatividade do usuário final; estou constantemente buscando formas intuitivas pelas quais os usuários podem navegar nos sites facilmente enquanto conseguem obter informaçõs relevantessobre o assunto do site rapidamentee claramentee . </p>
+                    <a href="#">Saiba Mais</a>
                 </div>
                 <div className="desing">
-                    <img src="" alt="" />
+                    <div className="imgCortada">
+                        <img src={Rain}/>
+                    </div>
+                    <div className="imgCortada">
+                        <img src={Room}/>
+                    </div>
                 </div>
+            </div>
+            <div className="resto">
+                <h1>Obrigada!</h1>
             </div>
         </main>
     )
