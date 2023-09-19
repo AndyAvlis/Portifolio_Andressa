@@ -43,6 +43,7 @@ main .trabalho{
     padding: 30px;
     background-color: #fff;
     border-bottom: 1px solid #0C0D0C;
+    flex-direction: column;
 }
 
 main .trabalho .textoD{
@@ -123,4 +124,29 @@ main .trabalho .textoD a:hover::before {
 .resto h1:hover{
     transition: 1s;
     color: #A60321;
+}
+
+.projetos{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.barraPesquisa{
+    height: 30px;
+    border: 1px solid #d4d4d4;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.barraPesquisa:focus-visible{
+    outline: 1px solid #5f9ea0;
+}
+
+.pesquisa{
+    padding: 50px;
 }
