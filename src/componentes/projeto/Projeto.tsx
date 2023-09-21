@@ -8,12 +8,14 @@ type ProjetoProps={
 
 export default function Projeto(props:ProjetoProps){
     return(
-        <div className="Projeto_content">
+        <div className="projeto_content">
             <div className="foto_projeto">
                 <img src={props.imagem} alt=""/>
             </div>
             <div className="texto_foto">
-                <h1>{props.titulo}</h1>
+                <h1 className='titulo'>
+                    {props.titulo}
+                </h1>
                 <p className="sinopse">
                     {props.sinopse}
                 </p>

@@ -110,17 +110,13 @@ function Main() {
                     <p>Eu adoro trabalhar com design! É uma das minhas paixões. Desde que comecei a me interessar por design, tenho feito vários projetos e cada um deles tem sido muito gratificante para mim. </p>
                     <a href="#">Saiba Mais</a>
                     <div className="pesquisa">
-                    <input className='barraPesquisa' type="text" onChange={mudaTexto} />
-                <div>
-                    <p className='texto_digitado'>pesquisa: {texto}</p>
+                        <input className='barraPesquisa' type="text" onChange={mudaTexto} />
+                        <p className='texto_digitado'>pesquisa: {texto}</p>
+                    </div>
+                    <div className="projetos">
+                        { projetos.filter((projeto)=>projeto.titulo.toLocaleLowerCase().includes(texto)).map((projeto) => <Projeto key = { projeto.id } titulo={projeto.titulo} sinopse={projeto.sinopse} imagem={projeto.imagem}/>) }
+                    </div>
                 </div>
-                </div>
-            <div className="desing">
-            </div>
-                <div className="projetos">
-                    { projetos.filter((projeto)=>projeto.titulo.toLocaleLowerCase().includes(texto)).map((projeto) => <Projeto key = { projeto.id } titulo={projeto.titulo} sinopse={projeto.sinopse} imagem={projeto.imagem}/>) }
-                </div>
-            </div>
             </div>
             <div className="resto">
                 <h1>Obrigada!</h1>

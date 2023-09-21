@@ -53,16 +53,8 @@ main .trabalho .textoD{
 }
 
 main .trabalho .textoD p{
-    padding: 20px;
-    width: 45%;
-    height: auto;
-    text-align: justify;
-    font-size: 23px;
-}
-
-main .trabalho .desing{
-    display: flex;
-}
+    font-size: 20px;
+ }
 
 main .trabalho .desing .imgCortada img{
     width: 350px;
@@ -136,17 +128,35 @@ main .trabalho .textoD a:hover::before {
 }
 
 .barraPesquisa{
-    height: 30px;
-    border: 1px solid #d4d4d4;
-    width: 200px;
-    border-radius: 5px;
-    font-size: 1.4rem;
+    line-height: 30px;
+    border: 4px solid transparent;
+    border-bottom-color: #A60321;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0C0D0C;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.barraPesquisa:focus-visible{
-    outline: 1px solid #5f9ea0;
+.barraPesquisa:focus-visible, .barraPesquisa:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid #0C0D0C;
+}
+
+.barraPesquisa::placeholder {
+    color: #A60321;
+}
+
+.barraPesquisa:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
 }
 
 .pesquisa{
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
